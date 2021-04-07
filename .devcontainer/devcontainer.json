@@ -1,48 +1,43 @@
 // If you want to run as a non-root user in the container, see .devcontainer/docker-compose.yml.
 {
-	"name": "Go",
-	"dockerComposeFile": "docker-compose.yml",
-	"service": "docker-in-docker",
-	"workspaceFolder": "/go/src/github.com/xinsnake/databricks-sdk-golang",
-	"postCreateCommand": "",
-	"shutdownAction": "stopCompose",
-	"extensions": [
-		"ms-azuretools.vscode-docker",
-		"ms-vscode.go"
-	],
-	"settings": {
-		"terminal.integrated.shell.linux": "zsh",
-		"go.gopath": "/go",
-		"go.useLanguageServer": true,
-		"[go]": {
-			"editor.formatOnSave": true,
-			"editor.codeActionsOnSave": {
-				"source.organizeImports": true,
-			},
-			// Optional: Disable snippets, as they conflict with completion ranking.
-			"editor.snippetSuggestions": "none",
-		},
-		"[go.mod]": {
-			"editor.formatOnSave": true,
-			"editor.codeActionsOnSave": {
-				"source.organizeImports": true,
-			},
-		},
-		"gopls": {
-			"usePlaceholders": true, // add parameter placeholders when completing a function
-			// Experimental settings
-			"completeUnimported": true, // autocomplete unimported packages
-			"deepCompletion": true // enable deep completion
-		},
-		"go.toolsEnvVars": {
-			"GO111MODULE": "on"
-		},
-		"go.lintTool": "golangci-lint",
-		"go.lintFlags": [
-			"--fast"
-		],
-		"remote.extensionKind": {
-			"ms-azuretools.vscode-docker": "workspace"
-		}
-	}
+  "name": "Go",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "docker-in-docker",
+  "workspaceFolder": "/go/src/github.com/FlipsideCrypto/databricks-sdk-golang",
+  "postCreateCommand": "",
+  "shutdownAction": "stopCompose",
+  "extensions": ["ms-azuretools.vscode-docker", "ms-vscode.go"],
+  "settings": {
+    "terminal.integrated.shell.linux": "zsh",
+    "go.gopath": "/go",
+    "go.useLanguageServer": true,
+    "[go]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      },
+      // Optional: Disable snippets, as they conflict with completion ranking.
+      "editor.snippetSuggestions": "none"
+    },
+    "[go.mod]": {
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+        "source.organizeImports": true
+      }
+    },
+    "gopls": {
+      "usePlaceholders": true, // add parameter placeholders when completing a function
+      // Experimental settings
+      "completeUnimported": true, // autocomplete unimported packages
+      "deepCompletion": true // enable deep completion
+    },
+    "go.toolsEnvVars": {
+      "GO111MODULE": "on"
+    },
+    "go.lintTool": "golangci-lint",
+    "go.lintFlags": ["--fast"],
+    "remote.extensionKind": {
+      "ms-azuretools.vscode-docker": "workspace"
+    }
+  }
 }

@@ -4,8 +4,8 @@ import (
 	. "github.com/onsi/ginkgo"
 	. "github.com/onsi/gomega"
 
-	databricks "github.com/xinsnake/databricks-sdk-golang"
-	. "github.com/xinsnake/databricks-sdk-golang/azure"
+	databricks "github.com/FlipsideCrypto/databricks-sdk-golang"
+	. "github.com/FlipsideCrypto/databricks-sdk-golang/azure"
 )
 
 var _ = Describe("Client", func() {

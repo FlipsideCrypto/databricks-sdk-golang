@@ -8,9 +8,9 @@ This is a Golang SDK for [DataBricks REST API 2.0](https://docs.databricks.com/a
 
 ```go
 import (
-  databricks "github.com/xinsnake/databricks-sdk-golang"
-  dbAzure "github.com/xinsnake/databricks-sdk-golang/azure"
-  // dbAws "github.com/xinsnake/databricks-sdk-golang/aws"
+  databricks "github.com/FlipsideCrypto/databricks-sdk-golang"
+  dbAzure "github.com/FlipsideCrypto/databricks-sdk-golang/azure"
+  // dbAws "github.com/FlipsideCrypto/databricks-sdk-golang/aws"
 )
 
 var o databricks.DBClientOption
@@ -27,20 +27,20 @@ jobs, err := c.Jobs().List()
 
 Everything except SCIM API are implemented. Please refer to the progress below:
 
-| API  | AWS | Azure |
-| :--- | :---: | :---: |
-| Clusters API | ✔ | ✔ |
-| DBFS API | ✔ | ✔ |
-| Groups API | ✔ | ✔ |
-| Instance Pools API (preview) | ✗ | ✗ |
-| Instance Profiles API | ✔ | N/A |
-| Jobs API | ✔ | ✔ |
-| Libraries API | ✔ | ✔ |
-| MLflow API | ✗ | ✗ |
-| SCIM API (preview) | ✗ | ✗ |
-| Secrets API | ✔ | ✔ |
-| Token API | ✔ | ✔ |
-| Workspace API | ✔ | ✔ |
+| API                          | AWS | Azure |
+| :--------------------------- | :-: | :---: |
+| Clusters API                 |  ✔  |   ✔   |
+| DBFS API                     |  ✔  |   ✔   |
+| Groups API                   |  ✔  |   ✔   |
+| Instance Pools API (preview) |  ✗  |   ✗   |
+| Instance Profiles API        |  ✔  |  N/A  |
+| Jobs API                     |  ✔  |   ✔   |
+| Libraries API                |  ✔  |   ✔   |
+| MLflow API                   |  ✗  |   ✗   |
+| SCIM API (preview)           |  ✗  |   ✗   |
+| Secrets API                  |  ✔  |   ✔   |
+| Token API                    |  ✔  |   ✔   |
+| Workspace API                |  ✔  |   ✔   |
 
 ## Notes
 

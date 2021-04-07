@@ -4,8 +4,8 @@ import (
 	"encoding/json"
 	"net/http"
 
-	"github.com/xinsnake/databricks-sdk-golang/azure/clusters/httpmodels"
-	"github.com/xinsnake/databricks-sdk-golang/azure/clusters/models"
+	"github.com/FlipsideCrypto/databricks-sdk-golang/azure/clusters/httpmodels"
+	"github.com/FlipsideCrypto/databricks-sdk-golang/azure/clusters/models"
 )
 
 // ClustersAPI exposes the Clusters API
