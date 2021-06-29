@@ -34,4 +34,5 @@ type ClusterInfo struct {
 	DefaultTags            []ClusterTag      `json:"default_tags,omitempty" url:"default_tags,omitempty"`
 	ClusterLogStatus       *LogSyncStatus    `json:"cluster_log_status,omitempty" url:"cluster_log_status,omitempty"`
 	TerminationReason      *S3StorageInfo    `json:"termination_reason,omitempty" url:"termination_reason,omitempty"`
+	DockerImage            *DockerImage      `json:"docker_image,omitempty" url:"docker_image,omitempty"`
 }
