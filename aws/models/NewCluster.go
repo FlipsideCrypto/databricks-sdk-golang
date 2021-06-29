@@ -15,4 +15,5 @@ type NewCluster struct {
 	InitScripts       []InitScriptInfo  `json:"init_scripts,omitempty" url:"init_scripts,omitempty"`
 	SparkEnvVars      map[string]string `json:"spark_env_vars,omitempty" url:"spark_env_vars,omitempty"`
 	EnableElasticDisk bool              `json:"enable_elastic_disk,omitempty" url:"enable_elastic_disk,omitempty"`
+	DockerImage       *DockerImage      `json:"docker_image,omitempty" url:"docker_image,omitempty"`
 }
